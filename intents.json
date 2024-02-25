@@ -1,0 +1,87 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "heya", "what's up?", "how is it going?"],
+      "responses": ["Hello! Welcome to our online store. How can I assist you today?", "Hey! It's great to see you. How can I assist you today?",
+        "Hey there! Welcome to our online store. How can I help you?", "Hi there! Ready to explore our product options today?",
+        "Hello, what can I do for you today?"]
+    },
+    {
+      "tag": "services",
+      "patterns": ["What can you do?", "What services do you offer?", "Tell me about your capabilities", "How can you help me?", "What can you assist with?",
+        "In what ways can you support me?", "How can you support me", "List your services", "What are your functions?", "What assistance can I expect from you?",
+        "List your capabilities", "How do you provide assistance?", "What tasks can you perform?", "Can you assist me"],
+      "responses": ["I'm your trusty digital assistant with a bag full of tricks! Here's what I can do for you: - Have questions about our products? I'm here to provide details, availability, and reveal the latest promotions. - I have a treasure trove of product details to share with you. - I can recommend the perfect products based on your preferences. - Just type your order reference number, and I'll give you all the details about your order. - Wondering about product availability? Name the product, and I'll peek into our stock status for you."]
+    },
+    {
+      "tag": "product_recommendation",
+      "patterns": ["What products do you have?", "Tell me about your products", "What kind of products do you sell?", "Can you recommend a product?", "Suggest me a good product",
+        "Find me a product", "Find me a good product", "Which product should I buy?", "I need a product suggestion", "Help me to choose a product",
+        "Recommend a product for me", "Looking for product advice", "Product recommendations, please", "Product suggestions for my needs", "Show me product options",
+        "Top products for customers", "What's a good product?", "Products for different needs", "any product recommendations", "Give me details on", "Find information about",
+        "product details", "product information"],
+      "responses": ["Sure! Here are some of our popular products: [List of product names]. Which product are you interested in?"]
+    },
+    {
+      "tag": "product_info",
+      "patterns": ["Tell me about", "product"],
+      "responses": ["Sure, let me find the information for you."],
+      "context_set": "product_info"
+    },
+    {
+      "tag": "promotion_info",
+      "patterns": ["promotions", "What discounts are available?", "Any special offers?", "Promotions and discounts", "Are there any deals?",
+        "Tell me about current promotions", "Show me the latest discounts", "Promotional offers", "Discounts on products", "Special deals",
+        "What's on sale?", "Can you help me save money?", "Promos and offers", "Discounted products", "Deals and discounts", "Share current promotions"],
+      "responses": ["You're about to discover the hottest discounts on our products. Currently, we have promotions on [List of products with discounts]."]
+    },
+    {
+      "tag": "order_info",
+      "patterns": ["What can you", "Give me details on my order", "Find information about my order", "Check my order status",
+        "Order details", "Tell me about my order", "I want to know about my order", "Can you provide order information?", "Share my order details",
+        "Get info on my recent order", "What's the status of my order?", "Order status update", "Give me the details of my recent order", "Check my recent purchase"],
+      "responses": ["Sure, let me check the status for you."],
+      "context_set": "order_info"
+    },
+    {
+      "tag": "general_inquiry",
+      "patterns": ["Tell me about your return policy", "What payment methods do you accept?", "How can I contact customer support?", "Do you have a loyalty program?"],
+      "responses": ["I can provide information on that. Please specify your question.", "Sure, I can help with that. What do you want to know?"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thank you", "Thanks a lot", "Appreciate your help", "You're awesome", "I'm thankful",
+        "You've been so helpful", "I appreciate it", "Big thanks to you"],
+      "responses": ["You're welcome! If you have more questions, feel free to ask.", "It was my pleasure assisting you. Don't hesitate to ask if you need anything else."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Goodbye", "See you later", "Bye for now", "Farewell"],
+      "responses": ["Goodbye! Have a great day.", "Take care and have a wonderful day!"]
+    },
+    {
+      "tag": "fallback",
+      "patterns": ["Sorry, I don't know", "I'm not sure", "Can you repeat that?", "I didn't understand"],
+      "responses": ["I apologize, but I couldn't understand your request. Please try again or ask something else.", "I'm sorry, I couldn't catch that. Can you please rephrase your question?"]
+    },
+    {
+      "tag": "order_reference_no",
+      "patterns": ["My order reference no is {order_reference_no}", "this is my order reference no is "],
+      "responses": ["Let me check the status for you."],
+      "context_filter": "order_reference_no"
+    },
+    {
+      "tag": "gadget_info",
+      "patterns": ["Tell me about gadgets", "What gadgets do you have?", "Gadget details", "Gadget recommendations",
+        "Suggest me a gadget", "Recommend a gadget for me", "Gadgets for different needs", "Show me gadget options"],
+      "responses": ["Sure! Here are some of our popular gadgets: [List of gadget names]. Which gadget are you interested in?"]
+    },
+    {
+      "tag": "furniture_info",
+      "patterns": ["Tell me about furniture", "What furniture do you have?", "Furniture details", "Furniture recommendations",
+        "Suggest me a furniture", "Recommend a furniture for me", "Furniture for different needs", "Show me furniture options"],
+      "responses": ["Sure! Here are some of our popular furniture items: [List of furniture names]. Which furniture are you interested in?"]
+    }
+  ]
+}
